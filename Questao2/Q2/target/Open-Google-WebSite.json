@@ -1,0 +1,334 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Start Multiple Sessions",
+        "description": "As a Bank Manager \r\nIn order to synchronize the update of an account\r\nI want the customer have just one session of the application",
+        "id": "atm;start-multiple-sessions",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 475994795,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User is on running Application",
+            "match": {
+              "location": "ATMSteps.user_is_on_running_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 134563,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User chooses login option with valid AccountNumber and Password",
+            "match": {
+              "location": "ATMSteps.user_chooses_login_option_with_valid_AccountNumber_and_Password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47951681,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the System must not log the user again",
+            "match": {
+              "location": "ATMSteps.the_System_must_not_log_the_user_again()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Start one Session",
+        "description": "As a User\r\nIn order to access my account\r\nI want start a session of the application",
+        "id": "atm;start-one-session",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 318161,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "ATMSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 118598,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User chooses Login option with valid AccountNumber and Password",
+            "match": {
+              "location": "ATMSteps.user_chooses_Login_option_with_valid_AccountNumber_and_Password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 169914,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the System must show chance the status of logged of the account",
+            "match": {
+              "location": "ATMSteps.the_System_must_show_chance_the_status_of_logged_of_the_account()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 22,
+        "name": "Register a Strong Password",
+        "description": "As a Bank Manager\r\nIn order ensure more security for the customer\r\nI want the customer have to register a Strong Password for a new account",
+        "id": "atm;register-a-strong-password",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 317591,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "ATMSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 494918,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User chooses CreateAccount option with a weak password",
+            "match": {
+              "location": "ATMSteps.user_chooses_CreateAccount_option_with_a_weak_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 145396,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "the System must not create the account",
+            "match": {
+              "location": "ATMSteps.the_System_must_not_create_the_account()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "Consult Balance Transaction",
+        "description": "As a User\r\nIn order to know the balance of my account\r\nI want to see the balance",
+        "id": "atm;consult-balance-transaction",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 504610,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User is on a Session of the Application",
+            "match": {
+              "location": "ATMSteps.user_is_on_a_Session_of_the_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 144826,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User Choose CheekBalance Option",
+            "match": {
+              "location": "ATMSteps.user_Choose_CheekBalance_Option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 238906,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "the System must show the Balance",
+            "match": {
+              "location": "ATMSteps.the_System_must_show_the_Balance()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 40,
+        "name": "Deposit Transaction",
+        "description": "As a User\r\nIn order to keep my money on the bank\r\nI want to deposit money on the ATM",
+        "id": "atm;deposit-transaction",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 321582,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "ATMSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 135133,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User choose Deposit Option with valid Number of Account and the Amount",
+            "match": {
+              "location": "ATMSteps.user_choose_Deposit_Option_with_valid_Number_of_Account_and_the_Amount()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133993,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "System must update the balance of the account",
+            "match": {
+              "location": "ATMSteps.system_must_update_the_balance_of_the_account()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 49,
+        "name": "Payment Transaction",
+        "description": "As a User\r\nIn order to avoid lines on the bank\r\nI want to bay my bills on the ATM",
+        "id": "atm;payment-transaction",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 295924,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "ATMSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 102063,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User Choose Payment Option with valid AccountNumber and Password and bar code",
+            "match": {
+              "location": "ATMSteps.user_Choose_Payment_Option_with_valid_AccountNumber_and_Password_and_bar_code()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 142545,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "System must make the payment",
+            "match": {
+              "location": "ATMSteps.system_must_make_the_payment()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 58,
+        "name": "Create Account",
+        "description": "As a User\r\nIn order to make my daily financial transaction easier\r\nI want create an Account on the ATM",
+        "id": "atm;create-account",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 355793,
+              "status": "passed"
+            },
+            "line": 63,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "ATMSteps.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 122019,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "User chooses CreateAccount option",
+            "match": {
+              "location": "ATMSteps.user_chooses_CreateAccount_option()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 121449,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "the System must add an account to his DB",
+            "match": {
+              "location": "ATMSteps.the_System_must_add_an_account_to_his_DB()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "ATM",
+    "description": "",
+    "id": "atm",
+    "keyword": "Feature",
+    "uri": "ATM.feature"
+  }
+]
